@@ -1,0 +1,307 @@
+/* Home follows the reference's navy introduction and gold destination index. */
+body[data-app-view][data-app-view='home'] {
+  background: #1e2d59;
+  min-height: 100svh;
+  height: auto;
+  overflow: auto;
+}
+body[data-app-view][data-app-view='home'] #app {
+  width: 100%;
+  max-width: none;
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body[data-app-view='home'] .home-shell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0;
+  min-height: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  min-height: clamp(420px, 65svh, 760px);
+  background: #1e2d59;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+body[data-app-view='home'] .home-shell .info-heading {
+  height: auto;
+  margin: 0;
+  padding: clamp(24px, 4vw, 64px) 0 48px var(--editorial-gutter);
+  align-self: center;
+  display: block;
+}
+body[data-app-view='home'] .home-shell .info-heading h1 {
+  font:
+    700 clamp(64px, 8.8vw, 160px) / 0.94 Georgia,
+    'Times New Roman',
+    serif;
+  font-size: clamp(64px, 8.8vw, 160px) !important;
+  line-height: 0.95 !important;
+  letter-spacing: -0.06em;
+  margin: 0;
+  color: #fff;
+}
+.home-hero .info-heading .home-introduction {
+  max-width: 38ch;
+  margin: 32px 0 0;
+  font:
+    400 clamp(18px, 1.7vw, 26px) / 1.5 Arial,
+    Helvetica,
+    sans-serif;
+  color: #fff;
+}
+body[data-app-view='home'] .home-studio-intro {
+  display: flex;
+  align-self: stretch;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+}
+.home-classroom {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  background: transparent;
+}
+.home-classroom img {
+  display: block;
+  width: 58%;
+  max-width: none;
+  height: min(64svh, 730px);
+  object-fit: contain;
+  object-position: center bottom;
+  flex: 0 0 58%;
+  margin: 0;
+  filter: none;
+}
+.home-classroom .home-maya {
+  margin-left: -16%;
+}
+.home-classroom figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+body[data-app-view='home'] .home-studio {
+  display: block;
+  flex: none;
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f3bf4b;
+  box-shadow: none;
+  overflow: visible;
+}
+body[data-app-view='home'] .home-studio .home-choices {
+  display: block;
+  padding: clamp(32px, 4vw, 64px) var(--editorial-gutter);
+  background: #f3bf4b;
+}
+body[data-app-view='home'] .home-studio .home-paths {
+  display: grid;
+  grid-template-rows: none;
+  grid-auto-rows: auto;
+  align-items: start;
+  gap: clamp(36px, 4vw, 64px);
+}
+body[data-app-view='home'] .home-studio .home-path {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(24px, 6vw, 96px);
+  align-items: baseline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #1e2d59;
+  text-decoration: none;
+}
+body[data-app-view='home'] .home-studio .home-path::before {
+  content: none;
+}
+body[data-app-view='home'] .home-studio .home-path h2 {
+  display: block;
+  font:
+    700 clamp(34px, 4.5vw, 72px) / 1.04 Georgia,
+    'Times New Roman',
+    serif;
+  letter-spacing: -0.04em;
+  color: #1e2d59;
+  margin: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+body[data-app-view='home'] .home-studio .home-path-description {
+  display: block;
+  font:
+    400 clamp(16px, 1.5vw, 20px) / 1.5 Arial,
+    Helvetica,
+    sans-serif;
+  color: #1e2d59;
+  max-width: 40ch;
+  margin: 0 0 20px;
+}
+body[data-app-view='home'] .home-studio .home-path--secondary h2 {
+  font-size: clamp(28px, 3.3vw, 52px);
+}
+body[data-app-view='home'] .home-studio .home-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 48px;
+  padding: 12px 20px;
+  background: #1e2d59;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  font:
+    700 16px/1.4 Arial,
+    Helvetica,
+    sans-serif;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+body[data-app-view='home'] .home-studio .home-action:hover {
+  background: #15213f;
+}
+body[data-app-view='home'] .home-studio .home-path--resume {
+  justify-self: start;
+}
+.home-explore {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 24px;
+}
+body[data-app-view='home'] .home-shell .info-heading h1 > span {
+  display: block;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+body[data-app-view='home'] .home-explore .home-jump {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  font:
+    700 16px/1.4 Arial,
+    Helvetica,
+    sans-serif;
+  color: #1e2d59;
+  background: #f3bf4b;
+  text-decoration: none;
+}
+.home-explore p {
+  font:
+    400 16px/1.5 Arial,
+    Helvetica,
+    sans-serif;
+  margin: 0;
+  color: #fff;
+}
+body[data-app-view='home'] .home-explore .home-jump:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+body[data-app-view='home'] .home-studio a:focus-visible {
+  outline: 3px solid #1e2d59 !important;
+  outline-offset: 8px;
+}
+@media (max-width: 700px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+  body[data-app-view='home'] .home-shell .info-heading {
+    padding: 24px 24px 0;
+  }
+  body[data-app-view='home'] .home-shell .info-heading h1 {
+    font-size: clamp(56px, 15vw, 100px) !important;
+  }
+  .home-hero .info-heading .home-introduction {
+    margin-top: 24px;
+  }
+  .home-explore {
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .home-classroom {
+    margin-top: 24px;
+    padding-left: 20%;
+  }
+  .home-classroom img {
+    height: clamp(210px, 65vw, 340px);
+  }
+  body[data-app-view='home'] .home-studio .home-choices {
+    padding: 32px 24px 40px;
+  }
+  body[data-app-view='home'] .home-studio .home-paths {
+    gap: 40px;
+  }
+  body[data-app-view='home'] .home-studio .home-path {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  body[data-app-view='home'] .home-studio .home-path h2 {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+  body[data-app-view='home'] .home-studio .home-path--secondary h2 {
+    font-size: clamp(28px, 7vw, 40px);
+  }
+}
+@media (max-height: 500px) and (min-width: 701px) {
+  .home-hero {
+    min-height: 320px;
+  }
+  body[data-app-view='home'] .home-shell .info-heading {
+    padding-block: 24px;
+  }
+  body[data-app-view='home'] .home-shell .info-heading h1 {
+    font-size: 72px;
+  }
+  .home-hero .info-heading .home-introduction {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .home-classroom img {
+    height: 320px;
+  }
+}
+body[data-app-view='home'] .home-shell .info-heading h1 > span {
+  color: #fff !important;
+}
+@media (max-height: 500px) {
+  body[data-app-view='home'] .home-shell .info-heading {
+    padding-block: 16px;
+  }
+  body[data-app-view='home'] .home-shell .info-heading h1 {
+    font-size: 48px !important;
+  }
+  body[data-app-view='home'] .home-explore {
+    margin-top: 12px;
+  }
+}

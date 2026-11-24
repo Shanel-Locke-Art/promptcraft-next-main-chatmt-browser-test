@@ -1,0 +1,226 @@
+/* Shared type roles. Layout and colors are defined at each component source. */
+body[data-app-view] {
+  font-family: var(--font-body);
+  font-size: max(16px, var(--type-body));
+  line-height: 1.55;
+}
+body[data-app-view] :is(button,input,textarea,select,summary) {
+  font-family: var(--font-body) !important;
+  letter-spacing: normal;
+}
+body[data-app-view] :is(input,textarea,select,.directions-editor) {
+  font-size: max(16px, var(--type-body));
+  font-weight: 400;
+  line-height: 1.5;
+}
+body[data-app-view] :is(button,.action-link) {
+  font-size: max(16px, var(--type-body));
+  line-height: 1.35;
+}
+body[data-app-view] :is(.setup-field,.workspace-reason,.creative-core,.workspace-writing) > :is(label,legend),
+body[data-app-view] .workspace-section-main fieldset legend,
+body[data-app-view] .partner-layout--focused .babbage-questions label {
+  font: 700 var(--type-body)/1.4 var(--font-body);
+  letter-spacing: normal;
+}
+body[data-app-view] .workspace-section-main .creative-core > label {
+  font: 700 var(--type-body)/1.4 var(--font-body);
+}
+body[data-app-view] :is(.field-help,.save-notice,.workspace-privacy,.design-notice,.reference-note) {
+  font-family: var(--font-body);
+  font-size: max(16px, var(--type-small));
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+body[data-app-view] :is(.info-heading,.setup-intro,.library-heading) h1,
+body[data-app-view] .workspace-shell.workspace-shell--focused .workspace-heading h1 {
+  font: 400 var(--type-title)/1.2 var(--font-heading);
+  letter-spacing: -.4px;
+}
+body[data-app-view] :is(.info-page,.reference-entry,.review-reading) > :is(h2,h3,h4),
+body[data-app-view] .workspace-shell.workspace-shell--focused :is(.workspace-view,.workspace-section-main) .design-page-heading h2 {
+  font: 400 var(--type-section)/1.25 var(--font-heading);
+  letter-spacing: -.3px;
+}
+body[data-app-view] :is(.guided-document,.assignment-directions,.workspace-reading) h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+body[data-app-view] :is(.guided-feedback,.review-notes,.closing-board-recap) h3,
+body[data-app-view] .focused-scene.closing-experience .service-flow li strong {
+  font-family: var(--font-body);
+  font-size: max(24px, var(--type-subheading));
+  font-weight: 700;
+  letter-spacing: normal;
+}
+body[data-app-view] :is(.reference-topics,.workspace-section-rail) button,
+body[data-app-view] .header-actions :is(button,.action-link),
+body[data-app-view] :is(.main-nav,.menu-nav) a {
+  font-family: var(--font-body);
+  font-size: max(16px, var(--type-small));
+  line-height: 1.4;
+}
+body[data-app-view] :is(.workspace-tabs,.reference-tabs,.review-tabs) button {
+  font-family: var(--font-body);
+  font-size: max(16px, var(--type-body));
+  line-height: 1.35;
+}
+body[data-app-view] .brand strong {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: -.4px;
+}
+@media(max-width:700px) {
+  body[data-app-view] :is(.info-heading,.setup-intro,.library-heading) h1,
+body[data-app-view] .workspace-shell.workspace-shell--focused .workspace-heading h1 {
+    font-size: 24px;
+  }
+  body[data-app-view] .workspace-shell.workspace-shell--focused :is(.workspace-view,.workspace-section-main) .design-page-heading h2 {
+    font-size: 24px;
+  }
+  body[data-app-view] :is(.reference-tabs,.review-tabs) button {
+    font-size: max(16px, var(--type-small));
+  }
+}
+body[data-app-view] :is(input,textarea,select) {
+  font-size: max(16px, var(--type-body)) !important;
+}
+body[data-app-view='workspace'] #workspace-panel .workspace-build-title {
+  font: 400 26px/1.25 var(--font-heading);
+  font-style: normal;
+}
+body[data-app-view='workspace'] #workspace-panel .workspace-build-label {
+  font: 700 16px/1.4 var(--font-body);
+  font-style: normal;
+  letter-spacing: normal;
+}
+@media(max-width:700px) {
+  body[data-app-view='workspace'] #workspace-panel .workspace-build-title {
+    font-size: 24px;
+  }
+}
+body[data-app-view='workspace'] .workspace-shell :is(h1,label,legend,button,input,textarea,select,p,span) {
+  font-family: var(--font-body) !important;
+}
+body[data-app-view='workspace'] .workspace-shell.workspace-shell--focused .workspace-heading h1 {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+body[data-app-view='workspace'] #workspace-panel .workspace-build-title,
+body[data-app-view='workspace'] .workspace-shell.workspace-shell--focused .workspace-section-main .design-page-heading h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: normal;
+}
+body[data-app-view='workspace'] .workspace-shell .partner-content h3 {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+@media(max-width:380px) {
+  body[data-app-view='workspace'] .workspace-shell.workspace-shell--focused .workspace-heading h1 {
+    font-size: 24px;
+  }
+}
+body[data-app-view='workspace'] .workspace-shell .workspace-view > h2 {
+  letter-spacing: normal;
+}
+body[data-app-view='workspace'] .workspace-shell .partner-layout--focused .partner-content > h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: normal;
+}
+body[data-app-view='workspace'] .workspace-shell .workspace-view-body,
+body[data-app-view='workspace'] .workspace-shell .partner-layout--utility .partner-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+@media(max-width:700px) {
+  body[data-app-view='workspace'] .workspace-shell .workspace-view > h2,
+body[data-app-view='workspace'] .workspace-shell .partner-layout--focused .partner-content > h3 {
+    font-size: 28px;
+  }
+}
+body[data-app-view='workspace'] .workspace-shell :is(h1,p,label,legend,small,strong,button,a,input,textarea,select,span,li) {
+  font-family: var(--font-body) !important;
+}
+body[data-app-view='workspace'] .workspace-shell :is(h1,h2,h3,h4,h5,h6) {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.35;
+  font-style: normal;
+  letter-spacing: normal;
+}
+body[data-app-view='workspace'] .workspace-shell > .workspace-heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body[data-app-view='workspace'] .workspace-shell .workspace-view > h2,
+body[data-app-view='workspace'] .workspace-shell .design-page-heading h2,
+body[data-app-view='workspace'] .workspace-shell .partner-content > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+body[data-app-view='workspace'] .workspace-shell :is(.workspace-reading h4,.workspace-short-list :is(h3,h4)) {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+body[data-app-view='workspace'] .workspace-shell :is(p,li,label,legend,small,button,a,input,textarea,select) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body[data-app-view='workspace'] .workspace-shell :is(button,a) {
+  line-height: 1.35;
+}
+body[data-app-view='workspace'] .workspace-shell :is(.workspace-build-label,.workspace-reason > label,.creative-core > label,.babbage-questions label,.workspace-check strong,.workspace-combine-list label strong,.workspace-option strong) {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+body[data-app-view='workspace'] .workspace-shell :is(.workspace-welcome-label,.partner-mode,.workspace-option-action,.field-help,.ai-status,.final-check-status,.workspace-privacy,.save-notice,.design-notice,.app-footer-disclosure) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+body[data-app-view='workspace'] .workspace-shell :is(.workspace-welcome-label,.workspace-option-action) {
+  font-weight: 700;
+}
+body[data-app-view='workspace'] .workspace-shell:has(.partner-card--welcome) .partner-card--welcome .partner-content > h3 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+}
+body[data-app-view='workspace'] .workspace-shell :is(.workspace-tabs button,.workspace-part-nav button,.workspace-reading-nav button) {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+body[data-app-view='workspace'] .workspace-shell button.primary {
+  font-weight: 700;
+}
+@media(max-width:700px) {
+  body[data-app-view='workspace'] .workspace-shell > .workspace-heading h1 {
+    font-size: 24px;
+  }
+  body[data-app-view='workspace'] .workspace-shell :is(.workspace-view > h2,.design-page-heading h2,.partner-content > h3) {
+    font-size: 24px;
+  }
+  body[data-app-view='workspace'] .workspace-shell:has(.partner-card--welcome) .partner-card--welcome .partner-content > h3 {
+    font-size: 24px !important;
+  }
+}
+
+/* Workspace controls and task headings match the bold scenario typography. */
+body[data-app-view='workspace'] .workspace-shell--focused #workspace-panel :is(h2,h3,h4,h5,h6) {
+  font-family:Georgia,'Times New Roman',serif !important; font-weight:700; letter-spacing:normal;
+}
+body[data-app-view='workspace'] .workspace-shell.workspace-shell--focused .workspace-tabs button {
+  font-family:Arial,Helvetica,sans-serif !important; font-weight:700;
+}

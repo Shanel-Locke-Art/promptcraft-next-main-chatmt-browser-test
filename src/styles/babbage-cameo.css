@@ -1,0 +1,51 @@
+/* Babbage's visual-novel Easter egg. Scope framing to this cameo only. */
+body[data-app-view] .babbage-cameo-dialog .maya-actor {
+  left: auto;
+  right: max(2%, calc((100vw - 1120px) / 2));
+  top: auto;
+  bottom: 0;
+  width: min(36%, 403px);
+  height: clamp(280px, calc(100dvh - 300px), 560px);
+  overflow: visible;
+}
+body[data-app-view] .babbage-cameo-dialog .maya-actor img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: auto;
+  transform: translateX(-50%);
+  display: block;
+  width: auto;
+  height: 150%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center bottom;
+}
+body[data-app-view] .babbage-cameo-dialog .maya-dialogue { box-sizing:border-box; width:min(620px, calc(64% - 24px)); margin-left:max(18px, calc((100vw - 1120px) / 2)); }
+body[data-app-view] .babbage-cameo-dialog .maya-dialogue h3,
+body[data-app-view] .babbage-cameo-dialog .maya-dialogue p { color: #fff; }
+body[data-app-view] .babbage-cameo-dialog .maya-dialogue h3 { color: #f4bf38; }
+body[data-app-view] .babbage-cameo-dialog .maya-scene-nav { display: flex; justify-content: flex-end; }
+@media (max-width: 700px) {
+  body[data-app-view] .babbage-cameo-dialog .maya-actor {
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: min(38vw, 205px);
+    height: 48%;
+  }
+  body[data-app-view] .babbage-cameo-dialog .maya-actor img { height: 150%; top: -4%; bottom: auto; }
+  body[data-app-view] .babbage-cameo-dialog .maya-dialogue { box-sizing:border-box; width:calc(100% - 32px); margin-inline:16px; }
+}
+
+/* The cameo has a single exit in the gold bottom navigation, not a second header. */
+body[data-app-view] .babbage-cameo-dialog .maya-stage { flex: 1 1 auto; }
+
+/* No disclosure row is needed in the cameo: center its one exit in 72px. */
+body[data-app-view] .babbage-cameo-dialog.maya-dialog--novel .maya-body {
+  display:flex; flex:0 0 72px; box-sizing:border-box; height:72px; min-height:72px;
+  align-items:center; justify-content:flex-end; padding:12px 18px;
+}
+body[data-app-view] .babbage-cameo-dialog.maya-dialog--novel .maya-scene-nav { display:flex; align-items:center; min-height:48px; height:48px; margin:0; padding:0; }
+body[data-app-view] .babbage-cameo-dialog .maya-scene-nav button[data-babbage-close] { min-height:48px; margin:0; width:auto; min-width:180px; max-width:none; flex:none; white-space:normal; }

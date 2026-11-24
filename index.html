@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PromptCraft | Give the discussion a job</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="src/styles/styles.css?v=20261123-editorial-fixes-1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#scene-title">Skip to the activity</a>
+    <header class="app-header">
+      <div class="brand">
+        <img src="assets/brand/babbage-mark-small.svg" alt="" /><span
+          ><strong>Prompt<span>Craft</span></strong
+          ><small>The Prompt Lab · Great Falls College MSU</small></span
+        >
+      </div>
+      <div class="header-actions">
+        <div class="dropdown site-menu" data-dropdown>
+          <button
+            type="button"
+            id="site-menu-toggle"
+            data-open-label="Close"
+            data-closed-label="Help"
+            data-dropdown-toggle
+            aria-expanded="false"
+            aria-controls="site-menu-panel"
+          >
+            Help
+          </button>
+          <nav
+            id="site-menu-panel"
+            class="dropdown-panel info-nav"
+            popover="manual"
+            aria-label="PromptCraft menu"
+            hidden
+          >
+            <div
+              class="site-menu-group site-menu-journeys"
+              role="group"
+              aria-label="PromptCraft pages"
+            >
+              <a href="?view=home">Home</a>
+              <a href="?view=play&amp;story=1">Guided Scenario</a>
+              <a href="?view=workspace">Creative Workspace</a>
+              <a href="?view=lab">Babbage’s Idea Lab</a>
+              <a href="?view=guide">Course Guide</a>
+              <a href="?view=about">About</a>
+            </div>
+            <div
+              class="site-menu-group site-menu-project"
+              role="group"
+              aria-label="Your work and tools"
+            >
+              <a href="?view=scenario" class="site-return-activity" hidden
+                >Return to saved activity</a
+              >
+              <button
+                type="button"
+                class="restart-module"
+                data-action="open-references"
+                aria-label="Sources and samples"
+              >
+                <span class="reference-label-wide">Sources &amp; samples</span
+                ><span class="reference-label-small">Resources</span>
+              </button>
+              <button type="button" class="restart-module" data-action="restart-module">
+                Restart module
+              </button>
+            </div>
+            <div
+              class="site-menu-group site-menu-information"
+              role="group"
+              aria-label="Help and information"
+            >
+              <a href="?view=how-to-play">How to Play</a>
+              <a href="?view=babbage">Meet the Characters</a>
+              <a href="?view=privacy">Privacy &amp; Progress</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <nav class="public-navigation" aria-label="PromptCraft pages">
+        <a class="public-nav-button" href="?view=home">Home</a>
+        <a class="public-nav-button" href="?view=play&amp;story=1">Guided Scenario</a>
+        <a class="public-nav-button" href="?view=workspace">Creative Workspace</a>
+        <a class="public-nav-button" href="?view=lab">Babbage’s Idea Lab</a>
+        <a class="public-nav-button" href="?view=guide">Course Guide</a>
+        <a class="public-nav-button" href="?view=about">About</a>
+      </nav>
+      <div class="public-page-chooser">
+        <label class="sr-only" for="public-page">PromptCraft page</label>
+        <select id="public-page">
+          <option value="home">Home</option>
+          <option value="play&amp;story=1">Guided Scenario</option>
+          <option value="workspace">Creative Workspace</option>
+          <option value="lab">Babbage’s Idea Lab</option>
+          <option value="guide">Course Guide</option>
+          <option value="about">About</option>
+          <option value="how-to-play">How to Play</option>
+          <option value="babbage">Meet the Characters</option>
+          <option value="privacy">Privacy &amp; Progress</option>
+        </select>
+      </div>
+    </header>
+    <main id="app"></main>
+    <footer class="app-footer">
+      <img
+        class="footer-college"
+        src="assets/brand/gfc-river-otters.png"
+        alt="Great Falls College Montana State University, River Otters"
+        width="1131"
+        height="286"
+        decoding="async"
+      />
+      <span class="app-footer-disclosure"
+        >Asking Babbage sends assignment details to Chat MT AI</span
+      >
+    </footer>
+    <noscript
+      >This prototype needs JavaScript. Your existing PromptCraft project is unchanged.</noscript
+    >
+    <script type="module" src="src/app/entry.js?v=20261117-feedback-format-1"></script>
+  </body>
+</html>
